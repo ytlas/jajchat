@@ -29,5 +29,6 @@ while True:
     topic,messagedata=string.split()
     total_value+=int(messagedata)
     print topic,messagedata
+    socket.send("toto")
 
 print "Average messagedata value for topic '%s' was %dF" % (topicfilter,total_value / update_nbr)
